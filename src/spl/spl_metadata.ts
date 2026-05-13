@@ -26,7 +26,7 @@ umi.use(signerIdentity(signer));
         const data: DataV2Args = {
             name: "marcus aurelius",
             symbol: "MAC",
-            uri: "",
+            uri: "https://raw.githubusercontent.com/akshayysm/spl-token-nft-mpl-core/refs/heads/main/src/spl/assets/metadata.json",
             sellerFeeBasisPoints: 1,
             creators: null,
             collection: null,
