@@ -6,7 +6,39 @@ Scripts for creating SPL tokens and NFTs on Solana using Metaplex MPL Core.
 
 # Setup
 
-## 1. Add your wallet
+## 1. Install dependencies
+
+Install all dependencies:
+
+```bash
+npm install @metaplex-foundation/mpl-core@^1.10.0 \
+@metaplex-foundation/mpl-token-metadata@^3.4.0 \
+@metaplex-foundation/umi@^1.5.1 \
+@metaplex-foundation/umi-bundle-defaults@^1.5.1 \
+@metaplex-foundation/umi-uploader-irys@^1.5.0 \
+@solana-program/system@^0.12.0 \
+@solana-program/token@^0.13.0 \
+@solana/kit@^6.8.0 \
+bs58@^6.0.0 \
+dotenv@^16.5.0
+```
+
+Install development dependencies:
+
+```bash
+npm install -D @types/node@^25.6.0 \
+ts-node@^10.9.2 \
+typescript@^6.0.3
+```
+
+Or simply install everything from `package.json`:
+
+```bash
+npm install
+```
+---
+
+## 2. Add your wallet
 
 If you already have a local Solana wallet, you can use it.
 
@@ -39,39 +71,6 @@ Place your wallet keypair at the project root:
 ```txt
 root/
 └── devnet-wallet.json
-```
-
----
-
-## 2. Install dependencies
-
-Install all dependencies:
-
-```bash
-npm install @metaplex-foundation/mpl-core@^1.10.0 \
-@metaplex-foundation/mpl-token-metadata@^3.4.0 \
-@metaplex-foundation/umi@^1.5.1 \
-@metaplex-foundation/umi-bundle-defaults@^1.5.1 \
-@metaplex-foundation/umi-uploader-irys@^1.5.0 \
-@solana-program/system@^0.12.0 \
-@solana-program/token@^0.13.0 \
-@solana/kit@^6.8.0 \
-bs58@^6.0.0 \
-dotenv@^16.5.0
-```
-
-Install development dependencies:
-
-```bash
-npm install -D @types/node@^25.6.0 \
-ts-node@^10.9.2 \
-typescript@^6.0.3
-```
-
-Or simply install everything from `package.json`:
-
-```bash
-npm install
 ```
 
 ---
